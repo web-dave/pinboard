@@ -1,0 +1,14 @@
+.pinboard{
+    padding:15px;
+    margin:0 0 40px 0;
+    background-color: #e3e3e3;
+    .pin{
+        padding: 15px;
+        cursor: pointer;
+        .pin-content{
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+    }
+}    
