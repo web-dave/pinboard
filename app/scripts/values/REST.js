@@ -10,7 +10,7 @@
  */
 angular.module('pinBoardApp')
         .value('REST', {
-            'root': 'http://pin.webdave.de/rest',
+            'root': '/rest',
             'login': '/login/',
             'auth': '/auth.api.php',
             'logout' : '/logout/'
