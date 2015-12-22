@@ -21,12 +21,31 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl',
+        resolve: {
+            authorize: function(authService) {
+                return authService.authRoute();
+            }
+        }
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'aboutCtrl',
+        resolve: {
+            authorize: function(authService) {
+                return authService.authRoute();
+            }
+        }
       })
+//      .when('/logout', {
+//        templateUrl: 'views/logout.html',
+//        controller: 'logoutCtrl',
+//        resolve: {
+//            authorize: function(authService) {
+//                return authService.authRoute();
+//            }
+//        }
+//      })
       .otherwise({
         redirectTo: '/'
       });

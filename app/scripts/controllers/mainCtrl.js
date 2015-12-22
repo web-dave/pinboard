@@ -8,7 +8,7 @@
  * Controller of the pinBoardApp
  */
 angular.module('pinBoardApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('mainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

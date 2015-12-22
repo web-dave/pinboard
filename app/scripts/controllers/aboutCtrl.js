@@ -8,7 +8,7 @@
  * Controller of the pinBoardApp
  */
 angular.module('pinBoardApp')
-    .controller('AboutCtrl', function ($scope) {
+    .controller('aboutCtrl', function ($scope) {
         $scope.pins = new Array();
 
         for(var i=0;i < 24;i++){
